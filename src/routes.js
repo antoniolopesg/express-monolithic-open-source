@@ -1,7 +1,7 @@
-const { Router } = require('express');
+import { Router } from 'express';
 
 const router = Router();
 
 router.get('/', (req, res) => res.render('hello', { title: 'Página inicial' }));
 
-module.exports = router;
+export default router;

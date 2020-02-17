@@ -1,10 +1,12 @@
-const express = require('express');
-const hbs = require('express-handlebars');
-const path = require('path');
+import express from 'express';
+import hbs from 'express-handlebars';
+import path from 'path';
+import dotenv from 'dotenv';
+import routes from './routes';
 
-require('dotenv').config();
+dotenv.config();
 
-class App {
+class Server {
   constructor() {
     this.app = express();
     this.isDev = process.env.NODE_ENV === 'development';
@@ -29,8 +31,8 @@ class App {
   }
 
   routes() {
-    this.app.use(require('./routes.js'));
+    this.app.use(routes);
   }
 }
 
-module.exports = new App().app;
+export default new Server().app;
