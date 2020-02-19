@@ -3,6 +3,7 @@ import hbs from 'express-handlebars';
 import path from 'path';
 import dotenv from 'dotenv';
 import routes from './routes';
+import './database';
 
 dotenv.config();
 
