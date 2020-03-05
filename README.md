@@ -1,6 +1,6 @@
 # Express Monolithic - Open Source
 
-Uma aplicação monolítica simples desenvolvida em node.js + express + postgresql pensada para manutenção e adição de elementos e recursos.
+Uma aplicação monolítica simples desenvolvida em node.js + express + postgresql pensada para manutenção e adição de páginas e recursos
 
 
 ## Quick Start
@@ -14,7 +14,7 @@ git clone https://github.com/antoniolopesg/express-monolithic-open-source.git
 cd express-monolithic-open-source
 # Instale as dependências
 yarn install
-# Inicie a API
+# Inicie a aplicação
 yarn dev
 ```
 
